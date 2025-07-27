@@ -337,7 +337,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  const res = await fetch('http://localhost:5000/api/login', {
+  const res = await fetch('https://bulk-backend.onrender.com/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -375,7 +375,7 @@ document.getElementById('register-form').addEventListener('submit', async functi
   const password = document.getElementById('reg-password').value;
   const userType = document.getElementById('reg-type').value;
 
-  const res = await fetch('http://localhost:5000/api/register', {
+  const res = await fetch('https://bulk-backend.onrender.com/api/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name, email, password, userType })
